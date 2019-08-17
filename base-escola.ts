@@ -33,17 +33,17 @@ class Pessoa {
 
     classificar(){
         if (this.imc() < 18.5) {
-            console.log(`IMC: ${this.imc()} // Situação: Abaixo do Peso`)
+            console.log(`IMC: ${this.imc().toFixed(2)} // Situação: Abaixo do Peso`)
         } else if (this.imc() >= 18.5 && this.imc() <= 24.9) {
-            console.log(`IMC: ${this.imc()} // Situação: Peso Normal`)
+            console.log(`IMC: ${this.imc().toFixed(2)} // Situação: Peso Normal`)
         } else if (this.imc() >= 25 && this.imc() <= 29.9) {
-            console.log(`IMC: ${this.imc()} // Situação: Pré-Obesidade`)
+            console.log(`IMC: ${this.imc().toFixed(2)} // Situação: Pré-Obesidade`)
         } else if (this.imc() >= 30 && this.imc() <= 34.9) {
-            console.log(`IMC: ${this.imc()} // Situação: Obesidade Grau I`)
+            console.log(`IMC: ${this.imc().toFixed(2)} // Situação: Obesidade Grau I`)
         } else if (this.imc() >= 35 && this.imc() <= 39.9) {
-            console.log(`IMC: ${this.imc()} // Situação: Obesidade Grau II`)
+            console.log(`IMC: ${this.imc().toFixed(2)} // Situação: Obesidade Grau II`)
         } else {
-            console.log(`IMC: ${this.imc()} // Situação: Obesidade Grau III`)
+            console.log(`IMC: ${this.imc().toFixed(2)} // Situação: Obesidade Grau III`)
         }
     } 
 }

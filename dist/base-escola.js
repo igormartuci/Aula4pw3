@@ -35,22 +35,22 @@ var Pessoa = /** @class */ (function () {
      } */
     Pessoa.prototype.classificar = function () {
         if (this.imc() < 18.5) {
-            console.log("IMC: " + this.imc() + " // Situa\u00E7\u00E3o: Abaixo do Peso");
+            console.log("IMC: " + this.imc().toFixed(2) + " // Situa\u00E7\u00E3o: Abaixo do Peso");
         }
         else if (this.imc() >= 18.5 && this.imc() <= 24.9) {
-            console.log("IMC: " + this.imc() + " // Situa\u00E7\u00E3o: Peso Normal");
+            console.log("IMC: " + this.imc().toFixed(2) + " // Situa\u00E7\u00E3o: Peso Normal");
         }
         else if (this.imc() >= 25 && this.imc() <= 29.9) {
-            console.log("IMC: " + this.imc() + " // Situa\u00E7\u00E3o: Pr\u00E9-Obesidade");
+            console.log("IMC: " + this.imc().toFixed(2) + " // Situa\u00E7\u00E3o: Pr\u00E9-Obesidade");
         }
         else if (this.imc() >= 30 && this.imc() <= 34.9) {
-            console.log("IMC: " + this.imc() + " // Situa\u00E7\u00E3o: Obesidade Grau I");
+            console.log("IMC: " + this.imc().toFixed(2) + " // Situa\u00E7\u00E3o: Obesidade Grau I");
         }
         else if (this.imc() >= 35 && this.imc() <= 39.9) {
-            console.log("IMC: " + this.imc() + " // Situa\u00E7\u00E3o: Obesidade Grau II");
+            console.log("IMC: " + this.imc().toFixed(2) + " // Situa\u00E7\u00E3o: Obesidade Grau II");
         }
         else {
-            console.log("IMC: " + this.imc() + " // Situa\u00E7\u00E3o: Obesidade Grau III");
+            console.log("IMC: " + this.imc().toFixed(2) + " // Situa\u00E7\u00E3o: Obesidade Grau III");
         }
     };
     return Pessoa;
