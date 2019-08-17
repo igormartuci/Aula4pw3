@@ -48,4 +48,16 @@ class Pessoa {
     } 
 }
 
-export {Aluno as Alu, Pessoa as Pess}
+class Viagem {
+    constructor(public tempoGasto:number, public velocidadeMedia:number, public rendimentoVeiculo:number) {}
+
+    obterDistancia(){
+        return this.tempoGasto * this.velocidadeMedia
+    }
+
+    obterConsumo(){
+        return this.obterDistancia() / this.rendimentoVeiculo
+    }
+}
+
+export {Aluno as Alu, Pessoa as Pess, Viagem as Viag}
