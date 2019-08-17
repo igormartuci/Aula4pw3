@@ -15,7 +15,7 @@ class Pessoa {
         return this.peso / (this.altura * this.altura)
     }
 
-    classificar(imc:number){
+   /* classificar(imc:number){
         if (imc < 18.5) {
             console.log("IMC: " + imc + " // Situação: Abaixo do Peso")
         } else if (imc >= 18.5 && imc <= 24.9) {
@@ -29,7 +29,23 @@ class Pessoa {
         } else {
             console.log("IMC: " + imc + " // Situação: Obesidade Grau III")
         }
-    }
+    } */
+
+    classificar(){
+        if (this.imc() < 18.5) {
+            console.log(`IMC: ${this.imc()} // Situação: Abaixo do Peso`)
+        } else if (this.imc() >= 18.5 && this.imc() <= 24.9) {
+            console.log(`IMC: ${this.imc()} // Situação: Peso Normal`)
+        } else if (this.imc() >= 25 && this.imc() <= 29.9) {
+            console.log(`IMC: ${this.imc()} // Situação: Pré-Obesidade`)
+        } else if (this.imc() >= 30 && this.imc() <= 34.9) {
+            console.log(`IMC: ${this.imc()} // Situação: Obesidade Grau I`)
+        } else if (this.imc() >= 35 && this.imc() <= 39.9) {
+            console.log(`IMC: ${this.imc()} // Situação: Obesidade Grau II`)
+        } else {
+            console.log(`IMC: ${this.imc()} // Situação: Obesidade Grau III`)
+        }
+    } 
 }
 
 export {Aluno as Alu, Pessoa as Pess}

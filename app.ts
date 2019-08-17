@@ -5,6 +5,4 @@ import { Pess } from "./base-escola";
 ronqui.exibir() */
 
 let pessoa = new Pess(68, 1.74)
-let imc :number = pessoa.imc()
-
-pessoa.classificar(imc)
+pessoa.classificar()
